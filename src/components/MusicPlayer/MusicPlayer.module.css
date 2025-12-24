@@ -1,0 +1,105 @@
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #8b4513;
+  padding: 25px 30px; /* Increased from 15px 20px */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* Increased from 30px */
+  max-width: 1000px; /* Increased from 800px */
+  margin: 0 auto;
+}
+
+.playButton {
+  background-color: #6b3410;
+  border: 3px solid #f4e8d0; /* Increased from 2px */
+  border-radius: 50%;
+  width: 80px; /* Increased from 60px */
+  height: 80px; /* Increased from 60px */
+  font-size: 32px; /* Increased from 24px */
+  color: #f4e8d0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+}
+
+.playButton:hover {
+  background-color: #5a2a0d;
+  transform: scale(1.1);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.playButton:active {
+  transform: scale(0.95);
+}
+
+.nowPlaying {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Increased from 8px */
+  font-family: 'Courier New', monospace;
+  color: #f4e8d0;
+  font-size: 24px; /* Increased from 18px */
+  font-weight: bold;
+}
+
+.musicNote {
+  font-size: 42px; /* Increased from 32px */
+  color: #f4e8d0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+}
+
+.volumeControl {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Increased from 10px */
+  font-family: 'Courier New', monospace;
+  color: #f4e8d0;
+}
+
+.volumeIcon {
+  font-size: 18px; /* Increased from 14px */
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 8px 14px; /* Increased from 6px 10px */
+  background-color: #6b3410;
+  border: 2px solid #f4e8d0; /* Increased from 1px */
+  border-radius: 4px; /* Increased from 3px */
+}
+
+.volumeSlider {
+  width: 140px; /* Increased from 100px */
+  height: 6px; /* Added explicit height */
+  cursor: pointer;
+  accent-color: #6b3410;
+}
+
+.volumeLevel {
+  font-size: 18px; /* Increased from 14px */
+  font-weight: bold;
+  min-width: 50px; /* Increased from 40px */
+}

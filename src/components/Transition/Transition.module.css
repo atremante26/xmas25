@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.heartLock {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.5));
+}
+
+.lock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.key {
+  position: absolute;
+  top: 43.5%; 
+  transform: translateY(-50%); 
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
+}
