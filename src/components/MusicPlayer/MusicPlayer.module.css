@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   background-color: #8b4513;
-  padding: 25px 30px; 
+  padding: 20px 25px; 
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
@@ -13,18 +13,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px; 
-  max-width: 1000px; 
+  gap: 40px; 
+  max-width: 900px; 
   margin: 0 auto;
 }
 
 .playButton {
   background-color: #6b3410;
-  border: 3px solid #f4e8d0; 
+  border: 3px solid #f4e8d0;
   border-radius: 50%;
-  width: 80px; 
-  height: 80px;
-  font-size: 32px; 
+  width: 65px; 
+  height: 65px; 
+  font-size: 26px; 
   color: #f4e8d0;
   cursor: pointer;
   display: flex;
@@ -49,15 +49,15 @@
 .nowPlaying {
   display: flex;
   align-items: center;
-  gap: 12px; 
+  gap: 10px; 
   font-family: 'Courier New', monospace;
   color: #f4e8d0;
-  font-size: 24px; 
+  font-size: 20px; 
   font-weight: bold;
 }
 
 .musicNote {
-  font-size: 42px; 
+  font-size: 34px; 
   color: #f4e8d0;
   animation: pulse 2s ease-in-out infinite;
 }
@@ -76,30 +76,30 @@
 .volumeControl {
   display: flex;
   align-items: center;
-  gap: 15px; 
+  gap: 12px; 
   font-family: 'Courier New', monospace;
   color: #f4e8d0;
 }
 
 .volumeIcon {
-  font-size: 18px; 
+  font-size: 16px; 
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 8px 14px; 
+  padding: 6px 12px; 
   background-color: #6b3410;
-  border: 2px solid #f4e8d0; 
-  border-radius: 4px; 
+  border: 2px solid #f4e8d0;
+  border-radius: 4px;
 }
 
 .volumeSlider {
-  width: 140px; 
-  height: 6px; 
+  width: 120px; 
+  height: 6px;
   cursor: pointer;
   accent-color: #6b3410;
 }
 
 .volumeLevel {
-  font-size: 18px; /* Increased from 14px */
+  font-size: 16px; 
   font-weight: bold;
-  min-width: 50px; /* Increased from 40px */
+  min-width: 45px; 
 }

@@ -2,15 +2,15 @@
 
 .polaroid {
   background-color: #fff;
-  padding: 20px; 
-  padding-bottom: 60px; 
+  padding: 12px; 
+  padding-bottom: 40px; 
   box-shadow: 
     0 4px 6px rgba(0, 0, 0, 0.1),
     0 2px 4px rgba(0, 0, 0, 0.06);
   cursor: pointer;
   transition: all 0.3s ease;
-  max-width: 600px; 
-  width: 90vw; 
+  max-width: 450px; 
+  width: 80vw; 
 }
 
 .polaroid:hover {
