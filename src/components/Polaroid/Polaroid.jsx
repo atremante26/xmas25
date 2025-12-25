@@ -2,6 +2,8 @@ import { motion } from 'framer-motion'
 import styles from './Polaroid.module.css'
 
 function Polaroid({ photo, onClick }) {
+  const imageSrc = `${import.meta.env.BASE_URL}${photo.src}`
+  
   return (
     <motion.div
       className={styles.polaroid}
@@ -11,7 +13,7 @@ function Polaroid({ photo, onClick }) {
       transition={{ duration: 0.2 }}
     >
       <div className={styles.imageContainer}>
-        <img src={photo.src} alt="Memory" className={styles.image} />
+        <img src={imageSrc} alt="Memory" className={styles.image} />
       </div>
     </motion.div>
   )

@@ -34,7 +34,7 @@ function MusicPlayer() {
   return (
     <div className={styles.player}>
       <audio ref={audioRef} loop>
-        <source src="/music/dial_drunk.mp3" type="audio/mpeg" />
+        <source src={`${import.meta.env.BASE_URL}music/dial_drunk.mp3`} type="audio/mpeg" />
       </audio>
       
       <div className={styles.controls}>
